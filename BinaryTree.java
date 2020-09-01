@@ -33,7 +33,7 @@ public class BinaryTree {
         root.right.right = new Node(7);
 /* This is how a tree would look like
 
-						    1
+						1
 					    /       \
 					   2	     3
 					  / \       / \
