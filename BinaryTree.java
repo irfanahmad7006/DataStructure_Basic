@@ -142,7 +142,17 @@ public class BinaryTree {
         }
     }
 
-
+    public Node insertLevelOrder(Node root, int value){ //Time:O(h) h= Height of the tree
+        if(root == null){
+            return root = new Node(value);
+        }
+        if(value > root.data){
+            root.right = insert(root.right,value);
+        }else{
+            root.left = insert(root.left,value);
+        }
+        return root;
+    }
 
 
 
